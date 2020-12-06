@@ -64,7 +64,7 @@ body {
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 0.8fr 1fr 1fr 1fr;
+  grid-template-columns: 0.6fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
     "sidebar nav nav nav"
@@ -90,6 +90,14 @@ body {
 .nav_icon > i {
   font-size: 26px;
   color: #a5aaad;
+}
+
+.navbar__left {
+  /* border: 1px solid red; */
+  width: 350px;
+  background-color: rgb(161, 161, 161);
+  border-radius: 10px;
+  margin-left: 20px;
 }
 
 .navbar__left > a {
@@ -128,6 +136,7 @@ body {
 
 main {
   background: #f3f4f6;
+  /* border: 2px solid red; */
   grid-area: main;
   overflow-y: auto;
 }
@@ -312,10 +321,10 @@ main {
 /*  SIDEBAR STARTS HERE  */
 
 #sidebar {
-  background: #020509;
+  background: #ffffff;
   grid-area: sidebar;
   overflow-y: auto;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -324,8 +333,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f3f4f6;
-  margin-bottom: 30px;
+  color: #5d01d2;
+  /* margin-bottom: 10px; */
   /* color: #E85B6B; */
 }
 
@@ -340,8 +349,10 @@ main {
 }
 
 .sidebar__title > div > h1 {
-  font-size: 18px;
+  font-size: 20px;
   display: inline;
+  /* border: 1px solid red; */
+  margin-left: 50px;
 }
 
 .sidebar__title > i {
@@ -349,8 +360,14 @@ main {
   display: none;
 }
 
+.sidebar__menu {
+  /* background: chartreuse; */
+  margin: 0px;
+  padding: 0px;
+}
+
 .sidebar__menu > h2 {
-  color: #3ea175;
+  color: #8f8e8e;
   font-size: 16px;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -359,24 +376,26 @@ main {
 }
 
 .sidebar__link {
-  color: #f3f4f6;
+  color: #000;
   padding: 10px;
   border-radius: 3px;
   margin-bottom: 5px;
 }
 
 .active_menu_link {
-  background: rgba(62, 161, 117, 0.3);
-  color: #3ea175;
+  margin-top: 30px;
+  background: #5d01d2;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .active_menu_link a {
-  color: #3ea175 !important;
+  color: #ffffff !important;
 }
 
 .sidebar__link > a {
   text-decoration: none;
-  color: #a5aaad;
+  color: #000;
   font-weight: 700;
 }
 
